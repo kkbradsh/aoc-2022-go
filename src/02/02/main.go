@@ -60,6 +60,7 @@ func playGame(input []string) int {
 		for guess := range RUBRIC[theirPlay] {
 			if RUBRIC[theirPlay][guess] == myOutcome {
 				myPlay = guess
+				break
 			}
 		}
 		score = score + SCORE[myPlay] + myOutcome
